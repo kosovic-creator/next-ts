@@ -8,11 +8,11 @@ export default function Home() {
   return (
 
     <>
-      <div>Home</div>
 
-      <Shoping kupon={coupons} ubaciKupon={setCoupons} />
+
+
       <ShopingCard kupon_card={coupons} />
-
+      <Shoping kupon={coupons} ubaciKupon={setCoupons} />
     </>
 
   )
