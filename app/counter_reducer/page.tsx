@@ -1,5 +1,5 @@
 'use client';
-import React, { useReducer } from 'react';
+import React, { FC, useReducer } from 'react';
 
 // Definišemo tipove za stanje i akcije
 type State = {
@@ -28,7 +28,7 @@ function reducer(state: State, action: Action): State {
   }
 }
 
-const Counter: React.FC = () => {
+const Counter: FC = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   return (
