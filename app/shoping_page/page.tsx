@@ -1,4 +1,5 @@
 'use client'
+import { Button } from '@/components/ui/button';
 import React from 'react'
 
 interface ShopingProps {
@@ -10,7 +11,7 @@ interface ShopingProps {
     return (
       <div>
         <p>Coupons: {kupon}</p>
-        <button onClick={() => ubaciKupon(kupon + 1)}>Add Coupon</button>
+        <Button onClick={() => ubaciKupon(kupon + 1)}>Add Coupon</Button>
       </div>
     );
   };
