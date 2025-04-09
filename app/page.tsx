@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react'
 import { data } from './data';
 import { Button } from '@/components/ui/button';
+import Buttons from './button';
 
 export default function Home() {
 
@@ -30,6 +31,7 @@ export default function Home() {
           </div>
         </div>
       ))}
+      <Buttons text='Moje dugme' bgColor='blue' color='white' />
       <Button className='bg-slate-400' onClick={() => setProfil(profil => [...profil, { ime: 'sofija', godine: 88 }])}>SetProfilNovi</Button>
       {profil.map((item, index) => (
         <p key={index}>{item.ime} - {item.godine}</p>
