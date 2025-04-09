@@ -2,6 +2,7 @@
 import React from 'react'
 import CounterState from './counter_state/page'
 import Counter from './counter_reducer/page'
+import StateReducer from './state_reducer/page'
 
 
 
@@ -20,7 +21,17 @@ export default function Home() {
   </h5>
 </div>
 <CounterState/>
+
+
+<h5 className='text- font-bold text-center'>
+    Counter State and Reducer
+  </h5>
+
+
+<StateReducer/>
+
 </>
+
 
 
   )

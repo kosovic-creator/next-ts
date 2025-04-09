@@ -1,10 +1,8 @@
-'use client'
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { Button } from '@/components/ui/button'
-import React, { useState } from 'react'
+import React, { useState,useReducer } from 'react'
 
-
-
-export default function CounterState() {
+export default function StateReducer() {
     const[count, setCount] = useState(0)
     const increment = () => {
         setCount(count + 1)
@@ -22,3 +20,4 @@ export default function CounterState() {
     </div>
   )
 }
+
