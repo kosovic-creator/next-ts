@@ -8,9 +8,18 @@ import Counter from './counter_reducer/page'
 export default function Home() {
   return (
 <>
+<div>
+  <h5 className='text- font-bold text-center'>
+    Counter Example Reducer
+  </h5>
 
-{/* <CounterState/> */}
+
 <Counter/>
+<h5 className='text- font-bold text-center'>
+    Counter Example Reducer
+  </h5>
+</div>
+<CounterState/>
 </>
 
 

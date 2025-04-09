@@ -1,4 +1,5 @@
 'use client';
+import { Button } from '@/components/ui/button';
 import React, { FC, useReducer } from 'react';
 
 // Definišemo tipove za stanje i akcije
@@ -34,9 +35,9 @@ const Counter: FC = () => {
   return (
     <div>
       <h1>Count: {state.count}</h1>
-      <button onClick={() => dispatch({ type: 'increment' })}>Increment</button>
-      <button onClick={() => dispatch({ type: 'decrement' })}>Decrement</button>
-      <button onClick={() => dispatch({ type: 'reset' })}>Reset</button>
+      <Button onClick={() => dispatch({ type: 'increment' })}>Increment</Button>
+      <Button onClick={() => dispatch({ type: 'decrement' })}>Decrement</Button>
+      <Button onClick={() => dispatch({ type: 'reset' })}>Reset</Button>
     </div>
   );
 };
