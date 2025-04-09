@@ -10,20 +10,20 @@ export default function Home() {
   return (
 <>
 <div>
-  <h5 className='text- font-bold text-center'>
+  <h5 className='text- font-bold text-left'>
     Counter Example Reducer
   </h5>
 
 
 <Counter/>
-<h5 className='text- font-bold text-center'>
+<h5 className='text- font-bold text-left'>
     Counter Example Reducer
   </h5>
 </div>
 <CounterState/>
 
 
-<h5 className='text- font-bold text-center'>
+<h5 className='text- font-bold text-left'>
     Counter State and Reducer
   </h5>
 
