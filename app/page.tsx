@@ -32,12 +32,8 @@ export default function Home() {
 <StateReducer/>
 
 
-
-      {/* <Link href="/reducer_with_two_states">
-        <a>Složeni Reducer</a>
-      </Link> */}
-      <Link href="/slozeni_reducer">
-        slozeni_reducer
+      <Link href="/slozeni_reducer" className='text-blue-500 hover:underline'>
+      slozeni reducer
       </Link>
 </>
 

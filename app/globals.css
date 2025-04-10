@@ -120,3 +120,13 @@
     @apply bg-background text-foreground;
   }
 }
+.noUnderline {
+  text-decoration: none; /* Uklanja podvlačenje */
+  color: blue;
+  font-weight: bold;
+}
+
+.noUnderline:hover {
+  text-decoration: underline; /* Dodaje podvlačenje samo kada je kursor iznad */
+}
+
