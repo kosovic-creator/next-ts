@@ -7,12 +7,13 @@ export default function AppReducerSlozeni() {
   interface State {
     banka: string;
     iznos: number;
+
   }
 
   interface Action {
     type: 'UPLATA' | 'ISPLATA';
   }
-
+// const trenutni_iznos = ;
   const reducer = (state: State, action: Action): State => {
     switch (action.type) {
       case 'UPLATA':
