@@ -25,7 +25,7 @@ export default function AppReducerSlozeni() {
             ...state,
             iznos: state.iznos + 10,
 
-            odobrenje: state.odobrenje ? true : false,
+            odobrenje: state.odobrenje
           };
         }
       case 'ISPLATA':
