@@ -1,3 +1,4 @@
+'use client';
 import { createContext } from 'react';
 
 interface LoginContextType {
@@ -12,6 +13,7 @@ const LoginContext = createContext<LoginContextType>({
   setUsername: () => {},
   showProfile: false,
   setShowProfile: () => {},
+
 });
 
 export default LoginContext;

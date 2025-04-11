@@ -1,3 +1,4 @@
+'use client'
 import React, { useState } from 'react'
 import Login from './login/page'
 import LoginContext from '@/LoginContext'
