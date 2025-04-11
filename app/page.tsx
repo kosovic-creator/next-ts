@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import Login from './login/page'
 import LoginContext from '@/LoginContext'
 import Profile from './profile/page';
+import Mail from './mail/page';
 
 
 export default function Home() {
@@ -13,6 +14,8 @@ export default function Home() {
       <div className="App">
         <LoginContext.Provider value={{ username, setUsername, showProfile, setShowProfile }}>
           {showProfile ? <Profile /> : <Login />}
+          {showProfile ? <Mail /> : null}
+
         </LoginContext.Provider>
       </div>
     </>
