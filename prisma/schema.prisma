@@ -6,12 +6,11 @@
 
 generator client {
   provider = "prisma-client-js"
-  output   = "../lib/generated/prisma"
 }
 
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
+  url      = env("DATABASE_URL_PRISMA")
 }
 
 model User {
@@ -29,3 +28,14 @@ model Post {
   authorId  Int
   author    User    @relation(fields: [authorId], references: [id])
 }
+model Rezervacije {
+  id        Int     @id @default(autoincrement())
+  imePrezime       String
+  email           String?
+  datumPočetka     DateTime
+  datumKraja      DateTime
+  vrijeme    String?
+  brojOsoba Int?
+  status    Boolean @default(false)
+}
+
