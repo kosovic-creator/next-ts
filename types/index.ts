@@ -4,5 +4,5 @@ const UserSchema = z.object({
     age: z.number().positive("Godine moraju biti pozitivan broj"),
     email: z.string().email("Neispravan format email adrese"),
     });
-
+    type User = z.infer<typeof UserSchema>;
   export default UserSchema;
