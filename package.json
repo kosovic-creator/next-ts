@@ -16,10 +16,14 @@
     "clsx": "^2.1.1",
     "lucide-react": "^0.487.0",
     "next": "15.2.4",
-    "react": "^19.0.0",
+    "react": "^19.1.0",
     "react-dom": "^19.0.0",
+   
+    "react-hook-form": "7.0.0",
+    "react-use-form-state": "^0.13.2",
     "tailwind-merge": "^3.2.0",
-    "tw-animate-css": "^1.2.5"
+    "tw-animate-css": "^1.2.5",
+    "zod": "^3.24.2"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

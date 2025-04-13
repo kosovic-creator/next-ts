@@ -1,7 +1,8 @@
 
-import { add, usersAll } from '@/lib/actions';
-import React from 'react';
-export default async function Page() {
+import { Button } from '@/components/ui/button';
+import { add, createUser, usersAll } from '@/lib/actions';
+
+export default async function PrismaApp() {
     console.log('ukupno', add(1, 2));
 
     try {
@@ -11,6 +12,7 @@ export default async function Page() {
         return (
             <>
                 <h1>Users</h1>
+
                 <ul>
                     {users.map((user) => (
                         <li key={user.id}>{user.name}</li>
@@ -22,5 +24,19 @@ export default async function Page() {
         console.error('Error fetching users:', error);
         return <p>Error loading users.</p>;
     }
-}
 
+    async function createUser(email: string, name: string) {
+        try {
+            const users = await createUser(email, name);
+            console.log('User created:', users);
+
+        } catch (error) {
+            console.error('Error creating user:', error);
+        }
+
+
+
+    }
+
+   
+}
